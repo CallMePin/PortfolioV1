@@ -11,3 +11,15 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+function sendMail() {
+    var fields = {};
+    document.addEventListener("DOMContentLoaded", function() {
+        fields.firstName = document.getElementById('firstName');
+        fields.email = document.getElementById('email');
+        fields.mailBody = document.getElementById('mailBody');
+        fields.subjectBody = document.getElementById('subjectBody');
+    })
+
+    window.location="mailto:StevenW789@hotmail.com?subject="+subjectBody+ "mailto!&body="+mailBody;
+}
